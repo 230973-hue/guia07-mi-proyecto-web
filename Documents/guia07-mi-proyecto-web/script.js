@@ -24,3 +24,16 @@ document.getElementById("mensajeCorreo").innerText =
 "Correo registrado correctamente.";
 }
 }
+
+document.getElementById("nombre").addEventListener("input", function() {
+document.getElementById("contador").innerText =
+"Caracteres: " + this.value.length;
+});
+
+function limpiarCampos() {
+document.getElementById("nombre").value = "";
+document.getElementById("correo").value = "";
+document.getElementById("resultado").innerText = "";
+document.getElementById("mensajeCorreo").innerText = "";
+document.getElementById("contador").innerText = "";
+}
