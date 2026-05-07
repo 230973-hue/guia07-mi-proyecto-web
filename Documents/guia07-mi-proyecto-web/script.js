@@ -37,3 +37,19 @@ document.getElementById("resultado").innerText = "";
 document.getElementById("mensajeCorreo").innerText = "";
 document.getElementById("contador").innerText = "";
 }
+
+function mostrarMensaje(id, mensaje, color) {
+let elemento = document.getElementById(id);
+
+elemento.innerText = mensaje;
+elemento.style.color = color;
+
+setTimeout(() => {
+elemento.innerText = "";
+}, 3000);
+}
+mostrarMensaje(
+"mensajeCorreo",
+"Correo registrado correctamente.",
+"green"
+);
